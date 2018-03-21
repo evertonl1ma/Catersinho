@@ -1,0 +1,16 @@
+<div class="page">
+	<h2 class="message__center">Cadastrar projeto</h2>
+	<div class="page__form">
+		<form class="form" action="file/upload" name="form" method="post" encType="multipart/form-data">
+			<input class="form__input"  type="text" name="titulo" placeholder="Titulo" required>
+			
+			<textarea class="form__text" name="descricao" ng-model="descricao" placeholder="Descrição" required></textarea>
+			<p class="message__danger" ng-show="descricao.length > 300">A descrição deve ser de no máximo 300 caracteres</p>
+			<input type="file" ng-model="img" name="file" required>
+			{{form.titulo.$error}}
+			<input type="submit" class="btn btn-register btn-large" value="Cadastrar projeto" ng-disabled="descricao.length > 300">
+
+			<a href="/" class="btn btn-register btn-back">Voltar</a>
+		</form>
+	</div>
+</div>

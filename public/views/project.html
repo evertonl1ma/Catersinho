@@ -1,0 +1,35 @@
+<div ng-include="'views/timer.html'"></div>
+<div class="page">
+	<div class="page__header">
+		<h1 class="page__title message__center">{{projeto[0].titulo}}</h1>
+	</div>
+
+	<div class="page__details">
+		<div class="page__image">
+			<img class="page__image-item" src="{{projeto[0].imagem}}" alt="">
+		</div>
+		
+
+		<div class="page__values">
+			<p class="message__info">{{projeto[0].descricao}}</p>
+
+			<div class="project__donate">
+				<p class="message__featured">Valor {{projeto[0].valor | currency: 'R$'}} reais</p>
+				<div class="percente">
+					<span>{{(projeto[0].valor / 500) * 100}}% arrecadado</span>
+					<div class="meter">
+						<div class="meter__progress" style="width: {{(projeto[0].valor / 500) * 100}}%"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="">
+				<a class="btn btn-register btn-large" ng-show="projeto[0].valor < 500" href="doar/nova-doacao/{{projeto[0].id}}">Apoie este projeto</a>
+				
+
+				<a href="projeto/editar/{{projeto[0].id}}">Editar</a>
+				<a href="/" class="btn btn-register btn-back">Voltar</a>
+			</div>
+		</div>
+	</div>
+</div>

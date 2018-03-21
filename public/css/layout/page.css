@@ -1,0 +1,32 @@
+.page {
+      width: 80%;
+      min-height: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 25px;
+    }
+  
+  .page__about {
+    background: #15181f;
+    padding: 40px;
+    margin-bottom: 80px;
+  }
+
+.page__details {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .page__image {
+      width: 40%;
+    }
+
+    .page__image-item {
+      width: 100%;
+    }
+
+    .page__values {
+      width: 58%;
+    }

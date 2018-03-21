@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	box-shadow: inset 0px -3px 3px -2px rgba(0, 0, 0, 0.1);
+	padding: 10px 12px;
+	align-items: center;
+}
+
+.header__title {
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #505763;
+    font-size: 2.2rem;
+}

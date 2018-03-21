@@ -1,0 +1,32 @@
+.main {
+	background-image: url(../../images/background-2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	min-height: 80%;
+}
+
+.main__content {
+	width: 650px;
+	position: relative;
+	top: 130px;
+	left: 115px;
+	padding: 8px;
+}
+		
+.main__title,
+.main__subtitle {
+	color: #505763;
+}
+
+.main__title {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.main__subtitle {
+	margin-top: 8px;
+	font-size: 28px;
+	font-weight: 300;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="catersinho">
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<title>Catersinho</title>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base/geral.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/home.css">
+  <link rel="stylesheet" href="css/layout/page.css">
+  <link rel="stylesheet" href="css/layout/footer.css">
+  <link rel="stylesheet" href="css/module/menu.css">
+  <link rel="stylesheet" href="css/module/projects.css">
+  <link rel="stylesheet" href="css/module/form.css">
+  <link rel="stylesheet" href="css/module/buttons.css">
+  <link rel="stylesheet" href="css/module/message.css">
+  <link rel="stylesheet" href="css/module/meter.css">
+  <link rel="stylesheet" href="css/module/timer.css">
+</head>
+<body>
+	<div ng-include="'views/header.html'"></div>
+	
+	<ng-view></ng-view>
+	
+  <div ng-include="'views/footer.html'"></div>
+
+  
+	<script src="vendor/angular.min.js"></script>
+	<script src="vendor/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/routes/routeConfig.js"></script>
+	<script src="js/controllers/ProjetoCtrl.js"></script>
+	<script src="js/controllers/ProjetosCtrl.js"></script>
+	<script src="js/controllers/NovoProjetoCtrl.js"></script>
+  <script src="js/controllers/EditProjetoCtrl.js"></script>
+	<script src="js/controllers/DonateCtrl.js"></script>
+</body>
+</html>

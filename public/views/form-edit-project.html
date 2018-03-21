@@ -1,0 +1,18 @@
+<div class="page">
+	<h2 class="message__center">Editar projeto</h2>
+	<div class="page__form">
+		<form class="form" action="edit/project/" name="form" method="post" encType="multipart/form-data">
+			<input  type="hidden" name="id" value="{{projeto[0].id}}">
+			<input  type="hidden" name="imagem" value="{{projeto[0].imagem}}">
+			<input class="form__input" type="text" name="titulo" value="{{projeto[0].titulo}}" placeholder="Titulo">
+			
+			<textarea class="form__text" name="descricao"  placeholder="Descrição">{{projeto[0].descricao}}</textarea>
+			<p class="message__danger" ng-show="descricao.length > 300">A descrição deve ser de no máximo 300 caracteres</p>
+			<img class="image__edit" src="{{projeto[0].imagem}}"><br>
+			<input type="file" ng-model="img" name="file">
+			<input type="submit" class="btn btn-register btn-large" value="Editar projeto" ng-disabled="descricao.length > 300">
+
+			<a href="/" class="btn btn-register btn-back">Voltar</a>
+		</form>
+	</div>
+</div>

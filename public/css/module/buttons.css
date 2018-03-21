@@ -1,0 +1,56 @@
+
+.btn-search {
+	border: none;
+	width: 55px;
+	background: #F2F3F5;
+}
+		
+
+.btn {
+	display: block;
+	height: 45px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-login,
+.btn-register {
+	width: 115px;
+	font-weight: 700;
+	font-size: 15px;
+	border-width: 1px;
+}
+
+.btn-login {
+	background: #FFF;
+	margin-right: 8px;
+	color:  #686F7E;
+	border-color: #505763;
+}
+
+.btn-register {
+	background: #EC5252;
+	border-color: #EC5252;
+	color: #FFF;
+	margin-right: 10px;
+}
+  
+.btn-large {
+    width: 200px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+    
+.btn-back {
+    background: #3498db;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.main__btn {
+	margin-top: 42px;
+	font-size: 18px;
+	width: 185px;
+	height: 50px;
+	line-height: 45px;
+}

@@ -1,0 +1,55 @@
+.title-page__products,
+.subtitle__products {
+	text-transform: uppercase;
+}
+
+.title-page__products {
+	font-size: 30px;
+}
+
+.subtitle__products {
+	font-size: 24px;
+	color: #020001;
+	margin-top: 8px;
+}
+
+.title__body {
+	color: #FFF;
+	text-transform: uppercase;
+	background: #153e76;
+	padding: 10px;
+	text-align: center;
+}
+
+.page-product__description {
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+.page-product__address {
+	display: block;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.page-product__address:first-child {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.corner {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	background: #183e6f;
+	color: #f6bb1f;
+	width: 28px;
+	transition: all .3s;
+}
+
+.corner:hover {
+	background: #010009;
+	color: #FFF;
+	transition: all .3s;
+}

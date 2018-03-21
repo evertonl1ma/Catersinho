@@ -1,0 +1,18 @@
+<div class="page">
+	<div class="page__header">
+		<h2 class="page__title message__center">{{projeto[0].titulo}}</h2>
+	</div>
+	
+	<div class="page__form">
+		<form class="form" action="doar/nova" method="post">
+			<input type="hidden" name="id" value="{{projeto[0].id}}">
+			<input class="form__input" ng-model="valor" ng-required="required" required type="text" name="valor" ng-model="valor" placeholder="Exemplo: 100.00">
+			<p class="message__info">Valor total: {{(projeto[0].valor) + (+valor) | currency: 'R$'}}</p>
+			<p class="message__info" ng-hide="(500 - (projeto[0].valor + (+valor))) < 0"> Este projeto ainda pode receber {{(500 - ((projeto[0].valor ) + (+valor))) | currency: 'R$'}}</p>
+			<p class="message__danger" ng-show="(500 - (projeto[0].valor + (+valor))) < 0">Este projeto não pode receber essa doação</p>
+			<input type="submit" class="btn btn-register" value="Doar" ng-disabled="(projeto[0].valor + (+valor))> 500 || !valor">
+
+			<a href="/projeto/{{projeto[0].id}}" class="btn btn-register btn-back">Voltar</a>
+		</form>
+	</div>
+</div>

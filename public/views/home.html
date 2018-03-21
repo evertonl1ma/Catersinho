@@ -1,0 +1,34 @@
+<main class="main">
+	<div class="main__content">
+		<h2 class="main__title">Financiamento coletivo para todos</h2>
+		<h3 class="main__subtitle">Financie seu projeto</h3>
+		<a href="/projeto/novo" class="btn btn-register main__btn">Crie seu projeto</a>
+	</div>
+</main>
+	
+<div class="projects">
+	<h2 class="projects__title">Veja alguns projetos que as pessoas estão apoiando</h2>
+
+	<div class="message__painel" ng-show="projetos.length == 0">
+		<hr>
+		<p class="message__info message__center">Ainda não há nenhum projeto cadastrado :(</p>
+	</div>
+
+	<div  class="project-list" ng-show="projetos.length > 0">
+		<div class="project project__item" ng-repeat="projeto in projetos">
+			<a href="projeto/{{projeto.id}}">
+			<img class="project__image" src="{{projeto.imagem}}" alt="">
+
+			<h3 class="project__title">{{projeto.titulo}}</h3>
+
+			 <p class="project__description">{{projeto.descricao | limitTo : 100}}...</p>
+			</a>
+		</div>
+	</div>
+</div>
+ 
+<div class="message">
+	<h2 class="message__title">O financiamento que você precisa</h2>
+	<hr class="message__line">
+	<h3 class="message__subtitle">Aqui você tira seu projeto do papel</h3>
+</div>

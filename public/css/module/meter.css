@@ -1,0 +1,20 @@
+.percente {
+      display: flex;
+      width: 180px;
+      flex-direction: column-reverse;
+      margin-top: 25px;
+    }
+
+		.meter {
+			height: 13px;
+			width: 250px;
+			border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 2px;
+      margin-bottom: 8px;
+		}
+
+		.meter__progress {
+			height: 100%;
+			width: 0%;
+			background: #7cc142;
+		}
